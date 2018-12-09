@@ -13,7 +13,8 @@ submission, /. This is the installable android app. It is found as
 ************The folders************
 There are two folders in this submission. /fbla-mobile-app-development/ is the
 original project with the original source code, while /android-project/ is the
-project configured for Android Studio.
+project configured for Android Studio. Before opening the folders you should 
+install npm, open Command Prompt in each folder, and run npm install in each folder.
 
 ************Source Code************
 The source code is the javascript .js files in /fbla-mobile-app-development/.
