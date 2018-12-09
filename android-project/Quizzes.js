@@ -1,6 +1,13 @@
 //import all the needed resourcces
 import * as React from 'react';
-import { ScrollView, View, Text, TouchableOpacity, Alert } from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  TouchableOpacity,
+  Alert,
+  RefreshControl,
+} from 'react-native';
 import { store, db } from './App';
 import { vsprintf } from 'sprintf-js';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
@@ -15,6 +22,7 @@ export class Quizzes extends React.Component {
       quizzes: [], //stores personal scores
       leaderboard: true, //boolean for whether to show personal or leaderboard
       allquizzes: [], //stores leaderboard top 20 scores
+      notready: true, //whether the data has been loaded yet
     };
   }
 
@@ -97,9 +105,12 @@ export class Quizzes extends React.Component {
         }
         //sort the array
         sortquizzes.sort((quizA, quizB) => {
-          return quizA.points < quizB.points;
+          return quizB.points - quizA.points;
         });
-        this.setState({ allquizzes: sortquizzes.slice(0, 20) });
+        this.setState({
+          allquizzes: sortquizzes.slice(0, 20),
+          notready: false,
+        });
       });
     //change value on leaderboard on server to trigger listener
     await firebase
@@ -114,7 +125,7 @@ export class Quizzes extends React.Component {
     store.getQuizzes(rows => {
       this.setState({
         quizzes: rows._array.sort(
-          (quizA, quizB) => quizA.points < quizB.points
+          (quizA, quizB) => quizB.points - quizA.points
         ),
       });
     });
@@ -135,7 +146,8 @@ export class Quizzes extends React.Component {
         style={{
           flex: 1,
           backgroundColor: 'white',
-        }}>
+        }}
+        refreshControl={<RefreshControl refreshing={this.state.notready} />}>
         <View
           style={{
             flex: 1,
