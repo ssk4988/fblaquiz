@@ -29,4 +29,5 @@ to grade this project as it is unreliable in some ways.
 To open the file in Android Studio, open Android Studio and choose the 
 folder /android-project/android/ to open. This contains the Android Studio
 elements. However, most of the source code for this is in /android-project
-as javascript .js files.
+as javascript .js files. Be sure to have your SDK installed already or it
+will prompt to install.
