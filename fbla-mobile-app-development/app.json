@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "FBLA Quiz!",
+    "description": "A quiz app to help you learn about FBLA",
+    "slug": "fbla-quiz",
+    "privacy": "unlisted",
+    "sdkVersion": "30.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "backgroundColor": "#000000",
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4",
+        "otf",
+        "xml"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+	"android": {
+		"package": "com.fbla.quiz",
+		"versionCode": 1,
+		"icon": "./assets/logo.png",
+	},
+  }
+}
