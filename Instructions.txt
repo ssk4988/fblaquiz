@@ -1,0 +1,39 @@
+This is Sachin Sivakumar's FBLA Mobile App Development submission: "FBLA Quiz". It is currently version number 2.0.
+
+This is FBLA Quiz, an FBLA trivia app that allows users to test their knowledge of FBLA. It does this in a 
+competition-like fashion by allowing players to answer questions while being timed. Questions come in 5 
+categories: FBLA Events, FBLA Rules, FBLA Officers, Business Skills, and FBLA Facts.
+
+Installation
+To install the file, download fbla-quiz-15be8545226b494892ff2f40e74337eb-signed.apk onto an Android device, 
+preferably a phone. This .apk file is found in the same folder as this instructions file. Before running the 
+file, go to Settings > Security and enable unknown sources. Run this file to 
+install the app. It requires no permissions. If you would prefer installing from a link, go to
+https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40ssk4988/fbla-quiz-15be8545226b494892ff2f40e74337eb-signed.apk
+To open the Android Studio project, go to the android-project folder and open the folder named “android” inside.
+
+Navigation
+FBLA Quiz’s navigation is simple and easy to understand. However, the Android hardware back button does not 
+work so please do not attempt to use it. The FBLA Quiz app also has its own interactive 
+instructions guide on how to use the app! View them by clicking the "Instructions" button from the start screen. 
+To take a quiz, press the “Take the Quiz” Button on the start screen. To change the settings on this quiz, 
+hit the settings icon on the start screen. In the settings, you can change things like how many questions and 
+what categories show up on the quiz. In the quiz, press on answer choices to select them, and if you 
+get a question wrong the correct answer will be shown. To pause the quiz click the pause icon in the top right 
+corner. Once you have finished the test, a few test metrics will be displayed. Here you can choose to share 
+your results through a social media platform of your choosing. To view your past results or the leaderboard, 
+press the “Quiz History” Button from the start screen. 
+
+Social Media
+FBLA Quiz integrates social media by allowing users to share their quiz results through virtually any social 
+media platform or form of electronic communication. An example of this is shown in the GUI pdf 
+(/GUI-Screenshots.pdf)
+
+Bug Reporting
+FBLA Quiz is bug free, but if a bug is found, users can report it by clicking a “bug” icon available on almost 
+all of the screens. Clicking this icon takes a screenshot, captures the log file, and sends it to me, the 
+developer, in the form of an email where users can provide any additional information about the bug.
+
+Leaderboard
+Once users finish their quizzes, these quizzes may show up on the leaderboard depending on their scores. You need
+an internet connection for this.
