@@ -105,7 +105,7 @@ export class Store {
     } else {
       return Math.round(Math.pow(100000 * percent, 1 / 1.5));
     }
-    return Math.round(100000 * percent);
+    return Math.round(Math.pow(100000 * percent, 1 / 1.5));
   };
 
   //read all questions
