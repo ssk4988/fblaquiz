@@ -1,4 +1,4 @@
-This is Sachin Sivakumar's Submission for FBLA Mobile App Development: "FBLA Quiz".
+This is Sachin Sivakumar's Submission for FBLA 2019 Mobile App Development: "FBLA Quiz".
 
 ************Background************
 This project was written using React Native, a cross platform mobile 
